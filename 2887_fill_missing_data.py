@@ -37,14 +37,6 @@ The quantity for Wristwatch and WirelessEarbuds are filled by 0.
 
 import pandas as pd
 
-data = {"name": ["Wristwatch", "WirelessEarbuds", "GolfClubs", "Printer"],
-        "quantity": [None, None, 779, 849],
-        "price": [135, 821, 9319, 3051]}
-
-products = pd.DataFrame(data)
-
-# print(products)
-
 def fillMissingValues(products: pd.DataFrame) -> pd.DataFrame:
     products['quantity'] = products['quantity'].fillna(0)
     return products
